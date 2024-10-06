@@ -12,7 +12,7 @@
 
   > Member-1: Aaditya Yadav, 231CS102, aadityayadav.231cs102@nitk.edu.in
 
-  > member-2: Chetan Kumar Sah, 231CS118, chetankumarsah.231cs118@nitk.edu.in
+  > Member-2: Chetan Kumar Sah, 231CS118, chetankumarsah.231cs118@nitk.edu.in
 
   > Member-3: Girish Sharma, 231CS123, girishsharma.231cs123@nitk.edu.in
 
