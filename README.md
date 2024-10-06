@@ -53,7 +53,9 @@ with mobile devices can be added for real-world applications.</br>
 <details>
   <summary>Detail</summary>
   
-  ![sample](https://github.com/user-attachments/assets/588c9f81-997e-431b-8da3-0b40f3713d4e)
+
+  > ![Block Diagram](Snapshots/Functional Block Diagram.png)
+
 
 </details>
 
