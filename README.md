@@ -54,7 +54,7 @@ with mobile devices can be added for real-world applications.</br>
   <summary>Detail</summary>
   
 
-  > ![Block Diagram](Snapshots/Block.png)
+  > ![Block Diagram](Snapshots/block.drawio.png)
 
 
 </details>
