@@ -64,7 +64,127 @@ with mobile devices can be added for real-world applications.</br>
 <details>
   <summary>Detail</summary>
 
-  > Explain how your model works with the help of a functional table (compulsory) followed by the flowchart.
+  1. Fuel Input Module:-
+- This module takes the initial fuel input, which represents the amount of fuel present at the beginning
+of a driving cycle.
+- From the second cycle onwards, it accepts the remaining fuel from the previous cycle as the new
+input. This allows the system to maintain continuity and provide an accurate real-time measurement
+of fuel levels.
+- It can handle various input types based on user configurations, making it flexible for different
+scenarios.
+2. Mileage Calculation Module:-
+- Calculates the effective mileage of the vehicle by considering several parameters such as vehicle
+type, road condition, and driving style.
+- It helps in determining the amount of fuel consumed during each cycle by multiplying the distance
+travelled by the fuel efficiency under specific conditions.
+- The module is responsible for updating the mileage for subsequent calculations, ensuring accurate
+tracking over multiple cycles.
+3. Fuel Consumption Tracker:-
+- Monitors the real-time fuel consumption throughout the operation, providing an estimate of how
+much fuel has been used at any point.
+- This module interacts with the mileage calculation module to determine the rate of fuel consumption
+and updates the remaining fuel accordingly.
+- It ensures that the system accurately tracks and updates the remaining fuel after each cycle.
+4. Range Estimator:-
+- Based on the current fuel level and effective mileage, this module calculates the maximum range
+the vehicle can cover with the available fuel.
+- It dynamically adjusts the range estimation depending on factors such as changes in driving conditions,
+providing real-time insights into how far the vehicle can travel.
+- This allows drivers to plan their journeys better, ensuring they refuel in a timely manner.
+5. LED Indicator Control Module:-
+- Manages the operation of two LED indicators that alert users when the fuel reaches certain critical
+levels:
+- LED 1: Glows when the remaining fuel is less than or equal to 5L but greater than 2L, indicating
+a low fuel alert.
+- LED 2: Glows when the remaining fuel is less than or equal to 2L, indicating a critical fuel level.
+- Ensures users receive timely alerts and can act before running out of fuel.
+6. Seven-Segment Display Controller:-
+- Controls the visual representation of the fuel level on a seven-segment display, allowing users to
+see the current fuel status at a glance.
+- Converts the digital value of the remaining fuel into a format that can be displayed either as a
+volume (e.g., liters) or as a percentage.
+- Enhances user experience by providing clear, easy-to-read information.
+7. Condition-Based Adaptation Module:-
+- This module adjusts the fuel consumption and range estimation calculations based on different
+conditions, including:
+- Vehicle Condition: Adjusts the mileage according to the type and efficiency of the vehicle.
+- Road Condition: Considers whether the driving is on highways, city roads, or rough terrains, influencing
+the fuel consumption rates.
+- Driver Behaviour: Adapts calculations based on driving patterns (aggressive, normal, or fuelefficient
+driving).
+- It ensures that the fuel gauge system provides realistic estimates and adapts dynamically to various
+driving scenarios.
+3 Equations Involved
+3.1 Mileage Calculation
+The mileage is calculated based on three factors:
+• Road Quality
+• Driver Quality
+• Vehicle Quality
+The resulting mileage is an average of these three calculated values.
+3.1.1 Mileage Equations
+Mileage based on road quality (mileage1):
+mileage1 =
+
+
+12, if road quality = 00 (good road condition)
+9, if road quality = 01 (moderate road condition)
+6, if road quality = 10 (poor road condition)
+3, if road quality = 11 (very poor road condition)
+Mileage based on driver quality (mileage2):
+mileage2 =
+(
+12, if driver quality = 0 (efficient driver)
+6, if driver quality = 1 (inefficient driver)
+
+Mileage based on vehicle quality (mileage3):
+mileage3 =
+
+
+12, if vehicle quality = 00 (best condition)
+9, if vehicle quality = 01 (good condition)
+6, if vehicle quality = 10 (average condition)
+3, if vehicle quality = 11 (poor condition)
+Average mileage (mileage):
+mileage =
+mileage1 + mileage2 + mileage3
+3
+3.2 Total Fuel Consumption Calculation
+Fuel consumption is determined by the distance covered and the calculated mileage. Additional
+fixed fuel consumption for headlights is also added.
+Equation for total fuel consumption:
+total fuel consumed =
+
+distance
+mileage
+
++ fuel headlights
+Where:
+• fuel headlights = 1 (fixed consumption per cycle)
+• If mileage > 0, fuel consumption depends on the distance/mileage ratio plus fuel headlights.
+• If mileage = 0, total fuel consumed is set to 0 to avoid any division errors.
+3.3 Remaining Fuel Calculation
+The remaining fuel is determined by subtracting the total fuel consumed from the input fuel for
+that cycle.
+Equation for remaining fuel:
+remaining fuel = input fuel − total fuel consumed
+If input fuel < total fuel consumed, remaining fuel is set to 0 to ensure it doesn’t go negative.
+3.4 LED Control Logic
+There are two LEDs that provide a visual indication of the fuel level:
+• LED1: Activates when fuel is low but not critical (2 < remaining fuel ≤ 5)
+• LED2: Activates when fuel is critically low (remaining fuel < 2)
+LED Equations:
+LED1 = 1 if (remaining fuel ≤ 5) ∧ (remaining fuel > 2)
+LED2 = 1 if (remaining fuel < 2)
+These conditions can be logically represented as:
+LED1 = (remaining fuel ≤ 5) ∧ (remaining fuel > 2)
+LED2 = (remaining fuel < 2)
+
+3.5 Explanation of Execution Flow
+1. Inputs are taken: Based on input fuel, distance, road quality, vehicle quality, and driver quality.
+2. Mileage is calculated: Depending on conditions, the mileage is computed.
+3. Fuel Consumption: With the given mileage and distance, the total fuel consumed is calculated.
+4. Remaining Fuel: Based on input fuel, remaining fuel is updated for the next cycle.
+5. LED Indicator: Based on remaining fuel, LED1 and LED2 are activated or deactivated.
 </details>
 
 <!-- Fourth Section -->
