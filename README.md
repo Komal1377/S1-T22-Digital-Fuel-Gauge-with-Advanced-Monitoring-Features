@@ -208,12 +208,29 @@ LED2 = (remaining fuel < 2)
 > ![Log9](Snapshots/LOGISIM9.jpeg)
 > ![Log10](Snapshots/LOGISIM10.jpeg)
 > ![Log12](Snapshots/LOGISIM12.jpeg)
+>
+> The provided Logisim design for a DigitalFuelGauge simulates a vehicle’s fuel management system,
+integrating various components to process inputs such as fuel level, distance traveled, and vehicle,
+road, and driver quality metrics. The design utilizes combinational logic to calculate the mileage
+based on these inputs, with specific conditions defined for each quality metric to determine the overall efficiency. The total fuel consumed is computed based on the calculated mileage and distance,
+ensuring that the remaining fuel does not fall below zero. Two LED indicators are implemented to
+signal different fuel level thresholds, providing visual alerts for low and critical fuel states. The overall structure is organized for clarity, with distinct functional blocks for input handling, calculations,
+and output displays, enabling easy analysis and modifications for further enhancements.
 </details>
 
 <!-- Fifth Section -->
 ## Verilog Code
 <details>
   <summary>Detail</summary>
+
+  The provided Verilog code implements a DigitalFuelGauge module that simulates a vehicle’s fuel management system, taking into account inputs such as clock, reset, fuel quantity, distance traveled,
+and various quality metrics for the vehicle, road, and driver. It calculates the mileage based on these inputs using case statements and averages the results, then computes the total fuel consumed during
+a travel cycle while ensuring that the remaining fuel is not negative. The module also includes
+logic to control two LED indicators based on fuel levels, signaling low and critical fuel statuses.
+Accompanying this module is a testbench that initializes the inputs, generates a clock signal, and systematically tests the functionality of the DigitalFuelGauge by varying input parameters and
+monitoring outputs, providing formatted results for each test cycle. This design is modular and
+clear, facilitating easy understanding and potential modifications.
+
 
   module DigitalFuelGauge(
     input clk,               // Clock Signal
