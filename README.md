@@ -64,6 +64,8 @@ with mobile devices can be added for real-world applications.</br>
 <details>
   <summary>Detail</summary>
 
+  > ![Log11](Snapshots/LOGISIM11.png)
+
   1. Fuel Input Module:-
 - This module takes the initial fuel input, which represents the amount of fuel present at the beginning
 of a driving cycle.
@@ -79,6 +81,7 @@ type, road condition, and driving style.
 travelled by the fuel efficiency under specific conditions.
 - The module is responsible for updating the mileage for subsequent calculations, ensuring accurate
 tracking over multiple cycles.
+> ![TRUTH](Snapshots/truthtable.png)
 3. Fuel Consumption Tracker:-
 - Monitors the real-time fuel consumption throughout the operation, providing an estimate of how
 much fuel has been used at any point.
@@ -192,7 +195,18 @@ LED2 = (remaining fuel < 2)
 <details>
   <summary>Detail</summary>
 
-  > Update a neat logisim circuit diagram
+  > ![Log1](Snapshots/LOGISIM1.png)
+ > ![Log2](Snapshots/LOGISIM2.png)
+  > ![Log3](Snapshots/LOGISIM3.png)
+> ![Log4](Snapshots/LOGISIM4.png)
+> ![Log5](Snapshots/LOGISIM5.png)
+> ![Log6](Snapshots/LOGISIM6.png)
+> ![Log7](Snapshots/LOGISIM7.png)
+> ![Log8](Snapshots/LOGISIM8.png)
+> ![Log9](Snapshots/LOGISIM9.png)
+> ![Log10](Snapshots/LOGISIM10.png)
+> ![Log11](Snapshots/LOGISIM11.png)
+> ![Log12](Snapshots/LOGISIM12.png)
 </details>
 
 <!-- Fifth Section -->
