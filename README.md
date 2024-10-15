@@ -65,6 +65,7 @@ with mobile devices can be added for real-world applications.</br>
   <summary>Detail</summary>
 
   > ![Log11](Snapshots/LOGISIM11.jpeg)
+> > ![TRUTH](Snapshots/truthtable.jpeg)
 
   1. Fuel Input Module:-
 - This module takes the initial fuel input, which represents the amount of fuel present at the beginning
@@ -81,7 +82,7 @@ type, road condition, and driving style.
 travelled by the fuel efficiency under specific conditions.
 - The module is responsible for updating the mileage for subsequent calculations, ensuring accurate
 tracking over multiple cycles.
-> ![TRUTH](Snapshots/truthtable.jpeg)
+
 3. Fuel Consumption Tracker:-
 - Monitors the real-time fuel consumption throughout the operation, providing an estimate of how
 much fuel has been used at any point.
