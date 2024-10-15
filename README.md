@@ -194,7 +194,8 @@ LED2 = (remaining fuel < 2)
 ## Logisim Circuit Diagram
 <details>
   <summary>Detail</summary>
-
+  
+> ![Log11](Snapshots/LOGISIM11.jpeg)
   > ![Log1](Snapshots/LOGISIM1.jpeg)
  > ![Log2](Snapshots/LOGISIM2.jpeg)
   > ![Log3](Snapshots/LOGISIM3.jpeg)
@@ -205,7 +206,6 @@ LED2 = (remaining fuel < 2)
 > ![Log8](Snapshots/LOGISIM8.jpeg)
 > ![Log9](Snapshots/LOGISIM9.jpeg)
 > ![Log10](Snapshots/LOGISIM10.jpeg)
-> ![Log11](Snapshots/LOGISIM11.jpeg)
 > ![Log12](Snapshots/LOGISIM12.jpeg)
 </details>
 
