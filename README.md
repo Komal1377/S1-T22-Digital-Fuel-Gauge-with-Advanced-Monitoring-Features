@@ -208,8 +208,8 @@ LED2 = (remaining fuel < 2)
 > ![Log9](Snapshots/LOGISIM9.jpeg)
 > ![Log10](Snapshots/LOGISIM10.jpeg)
 > ![Log12](Snapshots/LOGISIM12.jpeg)
->
-> The provided Logisim design for a DigitalFuelGauge simulates a vehicle’s fuel management system,
+
+The provided Logisim design for a DigitalFuelGauge simulates a vehicle’s fuel management system,
 integrating various components to process inputs such as fuel level, distance traveled, and vehicle,
 road, and driver quality metrics. The design utilizes combinational logic to calculate the mileage
 based on these inputs, with specific conditions defined for each quality metric to determine the overall efficiency. The total fuel consumed is computed based on the calculated mileage and distance,
