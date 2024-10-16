@@ -245,22 +245,3 @@ module divide_by_mileage_gates (
     // Gate-Level output can be controlled via AND, OR, and XOR to set quotient bits accordingly.
     // This would typically require sequential logic to track multiple bits of the quotient.
 endmodule
-
-// Main Digital Fuel Gauge Module
-module DigitalFuelGauge(
-    input clk,
-    input reset,
-    input [4:0] input_fuel,
-    input [3:0] distance,
-    input [1:0] vehicle_quality,
-    input [1:0] road_quality,
-    input driver_quality,
-    output reg LED1,
-    output reg LED2,
-    output reg [4:0] remaining_fuel,
-    output reg [7:0] mileage,
-    output reg [4:0] fuel_headlights,
-    output reg [4:0] total_fuel_consumed,
-    output reg [15:0] max_range
-);
-endmodule
