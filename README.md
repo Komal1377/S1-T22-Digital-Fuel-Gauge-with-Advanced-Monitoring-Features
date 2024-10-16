@@ -59,7 +59,8 @@ and functionality.</br>
   <summary>Detail</summary>
   
 
-  > ![Block Diagram](Snapshots/block.drawio.png)
+  > ![FUNCTIONALBLOCK](https://github.com/user-attachments/assets/9f614987-fa61-4b05-b924-6de7351b8516)
+
 
 
 </details>
