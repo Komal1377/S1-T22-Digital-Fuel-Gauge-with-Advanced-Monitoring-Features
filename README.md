@@ -67,13 +67,19 @@ and functionality.</br>
 <!-- Third Section -->
 ## Working
 <details>
-  <summary>Detail</summary>
+  <summary>Truth Table</summary>
 
   ![TRUTH](Snapshots/truthtable.jpeg)
 
   ![STATEDIAGRAM](https://github.com/user-attachments/assets/4c5dc65c-bdb3-4769-a788-31826b47554f)
 
+ <details>
+    <summary>MAIN CIRCUIT</summary>
+    
+   ![image](https://github.com/user-attachments/assets/dc1a1028-3597-49f4-966a-e0dbc82b48a6)
 
+    
+  </details>
   1. Fuel Input Module:-
 - This module takes the initial fuel input, which represents the amount of fuel present at the beginning
 of a driving cycle.
