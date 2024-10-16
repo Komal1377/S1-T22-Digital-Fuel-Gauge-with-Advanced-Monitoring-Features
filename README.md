@@ -69,7 +69,7 @@ and functionality.</br>
 <details>
   <summary>Detail</summary>
 
- > ![TRUTH](Snapshots/truthtable.jpeg)
+  ![TRUTH](Snapshots/truthtable.jpeg)
 
   1. Fuel Input Module:-
 - This module takes the initial fuel input, which represents the amount of fuel present at the beginning
