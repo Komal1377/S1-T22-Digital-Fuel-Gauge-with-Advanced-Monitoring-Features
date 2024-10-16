@@ -208,27 +208,27 @@ signal different fuel level thresholds, providing visual alerts for low and crit
 and output displays, enabling easy analysis and modifications for further enhancements.
   <details>
     <summary>MAIN CIRCUIT</summary>
-    > ![Log1](Snapshots/LOGISIM11.jpeg)
+    > ![LOGISIM12](https://github.com/user-attachments/assets/0d3fa01f-3346-4e3a-b96f-8542413c9f45)
   </details>
   <details>
-    <summary>MAIN CIRCUIT</summary>
+    <summary>MILEAGE MODULE</summary>
     > ![Log2](Snapshots/LOGISIM12.jpeg)
   </details>
   <details>
-    <summary>MAIN CIRCUIT</summary>
+    <summary>INITIAL MODULE</summary>
     > ![Log3](Snapshots/LOGISIM10.jpeg)
   </details>
   <details>
     <summary>COMPONENTS</summary>
-    > ![Log4](Snapshots/LOGISIM1.jpeg)
-    > ![Log5](Snapshots/LOGISIM2.jpeg)
-    > ![Log6](Snapshots/LOGISIM3.jpeg)
-    > ![Log7](Snapshots/LOGISIM4.jpeg)
-    > ![Log8](Snapshots/LOGISIM5.jpeg)
-    > ![Log9](Snapshots/LOGISIM6.jpeg)
-    > ![Log10](Snapshots/LOGISIM7.jpeg)
-    > ![Log11](Snapshots/LOGISIM8.jpeg)
-    > ![Log12](Snapshots/LOGISIM9.jpeg)
+    > ![Log1](Snapshots/LOGISIM1.jpeg)
+    > ![Log2](Snapshots/LOGISIM2.jpeg)
+    > ![Log3](Snapshots/LOGISIM3.jpeg)
+    > ![Log4](Snapshots/LOGISIM4.jpeg)
+    > ![Log5](Snapshots/LOGISIM5.jpeg)
+    > ![Log6](Snapshots/LOGISIM6.jpeg)
+    > ![Log7](Snapshots/LOGISIM7.jpeg)
+    > ![Log8](Snapshots/LOGISIM8.jpeg)
+    > ![Log9](Snapshots/LOGISIM9.jpeg)
   </details>
 
 </details>
