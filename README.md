@@ -67,7 +67,8 @@ and functionality.</br>
 <!-- Third Section -->
 ## Working
 <details>
-
+  <summary>Detail</summary>
+  
   ![TRUTH](Snapshots/truthtable.jpeg)
 
   ![STATEDIAGRAM](https://github.com/user-attachments/assets/4c5dc65c-bdb3-4769-a788-31826b47554f)
