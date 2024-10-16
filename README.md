@@ -67,7 +67,6 @@ and functionality.</br>
 <!-- Third Section -->
 ## Working
 <details>
-  <summary>Details</summary>
 
   ![TRUTH](Snapshots/truthtable.jpeg)
 
