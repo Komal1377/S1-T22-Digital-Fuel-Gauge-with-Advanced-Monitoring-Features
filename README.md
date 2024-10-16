@@ -220,19 +220,20 @@ and output displays, enabling easy analysis and modifications for further enhanc
     
    ![image](https://github.com/user-attachments/assets/dc1a1028-3597-49f4-966a-e0dbc82b48a6)
 
-
-  </details>
-  <details>
-    <summary>MILEAGE MODULE</summary>
-    
-  ![image](https://github.com/user-attachments/assets/fabc90c0-94f5-4987-aa63-c8cdb9d9a6cd)
-
     
   </details>
   <details>
     <summary>INITIAL MODULE</summary>
     
 ![image](https://github.com/user-attachments/assets/323b93b5-b5f9-41da-9b58-202beb7f1e6d)
+
+
+</details>
+  <details>
+    <summary>MILEAGE MODULE</summary>
+    
+  ![image](https://github.com/user-attachments/assets/fabc90c0-94f5-4987-aa63-c8cdb9d9a6cd)
+
 
   </details>
   <details>
