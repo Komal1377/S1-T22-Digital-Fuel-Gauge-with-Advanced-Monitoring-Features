@@ -208,11 +208,15 @@ signal different fuel level thresholds, providing visual alerts for low and crit
 and output displays, enabling easy analysis and modifications for further enhancements.
   <details>
     <summary>MAIN CIRCUIT</summary>
-    > ![LOGISIM12](https://github.com/user-attachments/assets/0d3fa01f-3346-4e3a-b96f-8542413c9f45)
+    
+   ![LOGISIM11](https://github.com/user-attachments/assets/20a6f019-5027-4320-906c-48c3ad0af9c8)
+
   </details>
   <details>
     <summary>MILEAGE MODULE</summary>
+    
     > ![Log2](Snapshots/LOGISIM12.jpeg)
+    
   </details>
   <details>
     <summary>INITIAL MODULE</summary>
