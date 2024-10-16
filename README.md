@@ -74,8 +74,7 @@ and functionality.</br>
 
 
     
-  </details>
-  1. Fuel Input Module:-
+1. Fuel Input Module:-
 - This module takes the initial fuel input, which represents the amount of fuel present at the beginning
 of a driving cycle.
 - From the second cycle onwards, it accepts the remaining fuel from the previous cycle as the new
