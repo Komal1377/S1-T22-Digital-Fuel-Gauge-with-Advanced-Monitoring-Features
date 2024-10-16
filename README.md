@@ -38,14 +38,19 @@ analysis of fuel requirements. This project seeks to develop a digital fuel gaug
 that offers precise fuel level readings and advanced monitoring features such as low-fuel warnings,
 consumption tracking, and predictive alerts. The goal is to bridge the gap between traditional fuel gauges
 and modern, data-driven fuel management systems.</br>
-3) Features: The system uses a seven-segment display to accurately represent the fuel level in either
-percentage or volume. It includes real-time fuel consumption tracking, allowing users to monitor how
-quickly the fuel is being used and to estimate remaining travel distance. LED indicators or buzzer sounds
-are triggered when the fuel level falls below a predefined threshold, providing timely alerts to the user.
-The system detects anomalies or failures in the fuel sensor, alerting the user to any sensor-related issues.
-The entire system is controlled using a digital IC trainer kit, providing a flexible environment for building
-and testing the design. Additional features such as GPS-based fuel consumption prediction and integration
-with mobile devices can be added for real-world applications.</br>
+3) Features:
+•  The system uses a seven-segment display to accurately represent the fuel level, which can be
+shown either as a percentage or as a volume measurement.
+• It includes real-time tracking of fuel consumption, allowing users to monitor the rate of fuel
+usage and estimate the remaining travel distance based on current fuel levels.
+• LED indicators or buzzer alarms are triggered when the fuel level falls below predefined thresholds, providing timely alerts to the user about low fuel levels.
+• The system calculates the maximum ranges for different vehicle, road, and driver conditions,
+considering various mileage scenarios.
+• It also tracks the total fuel consumed across multiple cycles, offering comprehensive information
+on fuel usage patterns.
+• Additional features, such as GPS-based predictions of fuel consumption and integration with
+mobile devices, can be incorporated for real-world applications to enhance user convenience
+and functionality.</br>
 
 </details>
 
