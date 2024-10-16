@@ -48,7 +48,7 @@ usage and estimate the remaining travel distance based on current fuel levels.
 considering various mileage scenarios.
  >• It also tracks the total fuel consumed across multiple cycles, offering comprehensive information
 on fuel usage patterns.
- >• Additional features, such as GPS-based predictions of fuel consumption and integration with
+>• Additional features, such as GPS-based predictions of fuel consumption and integration with
 mobile devices, can be incorporated for real-world applications to enhance user convenience
 and functionality.</br>
 
