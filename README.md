@@ -58,8 +58,7 @@ and functionality.</br>
 <details>
   <summary>Detail</summary>
   
-
-  > ![FUNCTIONALBLOCK](https://github.com/user-attachments/assets/9f614987-fa61-4b05-b924-6de7351b8516)
+ ![FUNCTIONALBLOCK](https://github.com/user-attachments/assets/9f614987-fa61-4b05-b924-6de7351b8516)
 
 
 
