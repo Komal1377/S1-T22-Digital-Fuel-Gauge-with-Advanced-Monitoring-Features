@@ -246,7 +246,7 @@ and output displays, enabling easy analysis and modifications for further enhanc
 
   ![image](https://github.com/user-attachments/assets/bcaeee30-6786-45bd-a5a0-23d727a681b6)
 
-    > ![Log9](Snapshots/LOGISIM9.jpeg)
+
   </details>
 
 </details>
