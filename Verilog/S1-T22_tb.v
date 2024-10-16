@@ -1,3 +1,13 @@
+//Design of Digital Systems Mini Project
+//S1_T22
+//DIGITAL FUEL GAUGE WITH ADVANCED MONITORING FEATURES
+//Semester: 3rd Sem B. Tech. CSE
+//Member-1: Aaditya Yadav, 231CS102, aadityayadav.231cs102@nitk.edu.in
+//Member-2: Chetan Kumar Sah, 231CS118, chetankumarsah.231cs118@nitk.edu.in
+//Member-3: Girish Sharma, 231CS123, girishsharma.231cs123@nitk.edu.in
+
+
+//Testbench File
 module DigitalFuelGauge_tb;
 
     // Inputs for the DigitalFuelGauge
@@ -16,8 +26,27 @@ module DigitalFuelGauge_tb;
     wire [7:0] mileage;          // Mileage calculation register 
     wire [4:0] fuel_headlights;  // Fuel consumed by headlights (1L)
     wire [4:0] total_fuel_consumed; // Total fuel consumption register
+     
+    // Instantiate the gate-level implementation for testing
+/*DigitalFuelGauge_GateLevel uut_G (
+        .clk(clk),
+        .reset(reset),
+        .input_fuel(input_fuel),
+        .distance(distance),
+        .vehicle_quality(vehicle_quality),
+        .road_quality(road_quality),
+        .driver_quality(driver_quality),
+        .LED1(LED1_G),
+        .LED2(LED2_G),
+        .remaining_fuel(remaining_fuel_G),
+        .mileage(mileage_G),
+        .fuel_headlights(fuel_headlights_G),
+        .total_fuel_consumed(total_fuel_consumed_G),
+        .max_range(max_range_G)
+    );
+    */
 
-    // Instantiate the DigitalFuelGauge for testing
+    // Instantiate the behavioral-level implementation for testing
     DigitalFuelGauge uut (
         .clk(clk),
         .reset(reset),
