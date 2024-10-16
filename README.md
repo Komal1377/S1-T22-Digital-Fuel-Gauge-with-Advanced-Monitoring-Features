@@ -199,8 +199,17 @@ LED2 = (remaining fuel < 2)
 ## Logisim Circuit Diagram
 <details>
   <summary>Detail</summary>
-  
+  The provided Logisim design for a DigitalFuelGauge simulates a vehicle’s fuel management system,
+integrating various components to process inputs such as fuel level, distance traveled, and vehicle,
+road, and driver quality metrics. The design utilizes combinational logic to calculate the mileage
+based on these inputs, with specific conditions defined for each quality metric to determine the overall efficiency. The total fuel consumed is computed based on the calculated mileage and distance,
+ensuring that the remaining fuel does not fall below zero. Two LED indicators are implemented to
+signal different fuel level thresholds, providing visual alerts for low and critical fuel states. The overall structure is organized for clarity, with distinct functional blocks for input handling, calculations,
+and output displays, enabling easy analysis and modifications for further enhancements.
+  <details>
+    <summary>MAIN CIRCUIT</summary>
 > ![Log11](Snapshots/LOGISIM11.jpeg)
+  </details>
   > ![Log1](Snapshots/LOGISIM1.jpeg)
  > ![Log2](Snapshots/LOGISIM2.jpeg)
   > ![Log3](Snapshots/LOGISIM3.jpeg)
@@ -213,13 +222,7 @@ LED2 = (remaining fuel < 2)
 > ![Log10](Snapshots/LOGISIM10.jpeg)
 > ![Log12](Snapshots/LOGISIM12.jpeg)
 
-The provided Logisim design for a DigitalFuelGauge simulates a vehicle’s fuel management system,
-integrating various components to process inputs such as fuel level, distance traveled, and vehicle,
-road, and driver quality metrics. The design utilizes combinational logic to calculate the mileage
-based on these inputs, with specific conditions defined for each quality metric to determine the overall efficiency. The total fuel consumed is computed based on the calculated mileage and distance,
-ensuring that the remaining fuel does not fall below zero. Two LED indicators are implemented to
-signal different fuel level thresholds, providing visual alerts for low and critical fuel states. The overall structure is organized for clarity, with distinct functional blocks for input handling, calculations,
-and output displays, enabling easy analysis and modifications for further enhancements.
+
 </details>
 
 <!-- Fifth Section -->
