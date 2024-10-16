@@ -209,29 +209,43 @@ and output displays, enabling easy analysis and modifications for further enhanc
   <details>
     <summary>MAIN CIRCUIT</summary>
     
-   ![LOGISIM11](https://github.com/user-attachments/assets/20a6f019-5027-4320-906c-48c3ad0af9c8)
+   ![image](https://github.com/user-attachments/assets/dc1a1028-3597-49f4-966a-e0dbc82b48a6)
+
 
   </details>
   <details>
     <summary>MILEAGE MODULE</summary>
     
-    > ![Log2](Snapshots/LOGISIM12.jpeg)
+  ![image](https://github.com/user-attachments/assets/fabc90c0-94f5-4987-aa63-c8cdb9d9a6cd)
+
     
   </details>
   <details>
     <summary>INITIAL MODULE</summary>
-    > ![Log3](Snapshots/LOGISIM10.jpeg)
+    
+![image](https://github.com/user-attachments/assets/323b93b5-b5f9-41da-9b58-202beb7f1e6d)
+
   </details>
   <details>
     <summary>COMPONENTS</summary>
-    > ![Log1](Snapshots/LOGISIM1.jpeg)
-    > ![Log2](Snapshots/LOGISIM2.jpeg)
-    > ![Log3](Snapshots/LOGISIM3.jpeg)
-    > ![Log4](Snapshots/LOGISIM4.jpeg)
-    > ![Log5](Snapshots/LOGISIM5.jpeg)
-    > ![Log6](Snapshots/LOGISIM6.jpeg)
-    > ![Log7](Snapshots/LOGISIM7.jpeg)
-    > ![Log8](Snapshots/LOGISIM8.jpeg)
+
+  ![image](https://github.com/user-attachments/assets/72b79506-1d76-4d7a-bf2f-34a483bc9044)
+
+
+   ![image](https://github.com/user-attachments/assets/48b4ab54-14d0-46f9-95af-3517e0a00182)
+
+  ![image](https://github.com/user-attachments/assets/ba0b51a5-8722-4ad4-9ada-7fdd3ed4a8e2)
+
+  ![image](https://github.com/user-attachments/assets/c8c1230b-9990-4b81-a0d2-2669dcc50604)
+
+  ![image](https://github.com/user-attachments/assets/9d3d9585-755c-45c1-8a7d-3ef4bcbbf25f)
+
+  ![image](https://github.com/user-attachments/assets/b619e963-a6be-403f-9650-8c001426d951)
+
+  ![image](https://github.com/user-attachments/assets/6d74e7d8-38a1-46c6-9acb-6bc0e3c56d3f)
+
+  ![image](https://github.com/user-attachments/assets/bcaeee30-6786-45bd-a5a0-23d727a681b6)
+
     > ![Log9](Snapshots/LOGISIM9.jpeg)
   </details>
 
