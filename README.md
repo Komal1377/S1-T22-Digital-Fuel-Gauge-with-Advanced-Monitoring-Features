@@ -69,7 +69,6 @@ and functionality.</br>
 <details>
   <summary>Detail</summary>
 
-  > ![Log11](Snapshots/LOGISIM11.jpeg)
 > > ![TRUTH](Snapshots/truthtable.jpeg)
 
   1. Fuel Input Module:-
