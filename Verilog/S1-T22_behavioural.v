@@ -6,7 +6,6 @@
 //Member-2: Chetan Kumar Sah, 231CS118, chetankumarsah.231cs118@nitk.edu.in
 //Member-3: Girish Sharma, 231CS123, girishsharma.231cs123@nitk.edu.in
 
-
 //Behavioral Level Implementation
 module DigitalFuelGauge(
     input clk,               // Clock Signal
