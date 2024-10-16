@@ -206,7 +206,8 @@ based on these inputs, with specific conditions defined for each quality metric 
 ensuring that the remaining fuel does not fall below zero. Two LED indicators are implemented to
 signal different fuel level thresholds, providing visual alerts for low and critical fuel states. The overall structure is organized for clarity, with distinct functional blocks for input handling, calculations,
 and output displays, enabling easy analysis and modifications for further enhancements.
-  <br/>
+  
+  </br>
   <details>
     <summary>MAIN CIRCUIT</summary>
     
