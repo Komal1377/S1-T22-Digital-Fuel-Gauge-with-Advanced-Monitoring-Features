@@ -39,16 +39,16 @@ that offers precise fuel level readings and advanced monitoring features such as
 consumption tracking, and predictive alerts. The goal is to bridge the gap between traditional fuel gauges
 and modern, data-driven fuel management systems.</br>
 3) Features:
-•  The system uses a seven-segment display to accurately represent the fuel level, which can be
+ >•  The system uses a seven-segment display to accurately represent the fuel level, which can be
 shown either as a percentage or as a volume measurement.
-• It includes real-time tracking of fuel consumption, allowing users to monitor the rate of fuel
+ >• It includes real-time tracking of fuel consumption, allowing users to monitor the rate of fuel
 usage and estimate the remaining travel distance based on current fuel levels.
-• LED indicators or buzzer alarms are triggered when the fuel level falls below predefined thresholds, providing timely alerts to the user about low fuel levels.
-• The system calculates the maximum ranges for different vehicle, road, and driver conditions,
+ >• LED indicators or buzzer alarms are triggered when the fuel level falls below predefined thresholds, providing timely alerts to the user about low fuel levels.
+ >• The system calculates the maximum ranges for different vehicle, road, and driver conditions,
 considering various mileage scenarios.
-• It also tracks the total fuel consumed across multiple cycles, offering comprehensive information
+ >• It also tracks the total fuel consumed across multiple cycles, offering comprehensive information
 on fuel usage patterns.
-• Additional features, such as GPS-based predictions of fuel consumption and integration with
+ >• Additional features, such as GPS-based predictions of fuel consumption and integration with
 mobile devices, can be incorporated for real-world applications to enhance user convenience
 and functionality.</br>
 
