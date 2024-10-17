@@ -38,10 +38,31 @@ module Main_Module(
     wire nreset;
     not u_reset_inv(nreset, reset);
 
-    // Initial Module: Road quality multiplexer
-    wire [7:0] road_quality_mux_out; 
-    mux2x1 road_quality_mux(.sel(road_quality), .in0(8'b00001100), .in1(8'b00001001), .in2(8'b00000110), .in3(8'b00000011), .out(road_quality_mux_out));
-    assign mileage1 = road_quality_mux_out;
+    // Gate-Level Implementation of 4x1 Multiplexer for Road Quality
+module mux4x1_gate_level (
+    input [1:0] sel,
+    input [7:0] in0,
+    input [7:0] in1,
+    input [7:0] in2,
+    input [7:0] in3,
+    output [7:0] out
+);
+    wire [7:0] and0, and1, and2, and3;
+    wire not_sel0, not_sel1;
+
+    // Generate NOT gates for the select signals
+    not g1(not_sel0, sel[0]);
+    not g2(not_sel1, sel[1]);
+
+    // AND gates to select the appropriate input based on sel
+    and g3[7:0] (and0, in0, {8{not_sel1 & not_sel0}});  // Select in0 if sel = 00
+    and g4[7:0] (and1, in1, {8{not_sel1 & sel[0]}});   // Select in1 if sel = 01
+    and g5[7:0] (and2, in2, {8{sel[1] & not_sel0}});   // Select in2 if sel = 10
+    and g6[7:0] (and3, in3, {8{sel[1] & sel[0]}});     // Select in3 if sel = 11
+
+    // OR gates to combine all possible outputs
+    or g7[7:0] (out, and0, and1, and2, and3);
+endmodule
 
     // Initial Module: Driver quality mileage calculation
     wire n_driver_quality;
@@ -50,24 +71,78 @@ module Main_Module(
     and u_driver_quality_out1(mileage2[1], driver_quality, 8'b00000110);
     or u_driver_quality_final(mileage2[7:2], mileage2[0], mileage2[1]);  
 
-    // Initial Module: Vehicle quality multiplexer
-    wire [7:0] vehicle_quality_mux_out; 
-    mux2x1 vehicle_quality_mux(.sel(vehicle_quality), .in0(8'b00001100), .in1(8'b00001001), .in2(8'b00000110), .in3(8'b00000011), .out(vehicle_quality_mux_out));
-    assign mileage3 = vehicle_quality_mux_out;
+    // Gate-Level Implementation of 4x1 Multiplexer for Vehicle Quality
+module mux4x1_gate_level_vehicle (
+    input [1:0] sel,
+    input [7:0] in0,
+    input [7:0] in1,
+    input [7:0] in2,
+    input [7:0] in3,
+    output [7:0] out
+);
+    wire [7:0] and0, and1, and2, and3;
+    wire not_sel0, not_sel1;
+
+    // Generate NOT gates for the select signals
+    not g1(not_sel0, sel[0]);
+    not g2(not_sel1, sel[1]);
+
+    // AND gates to select the appropriate input based on sel
+    and g3[7:0] (and0, in0, {8{not_sel1 & not_sel0}});  // Select in0 if sel = 00
+    and g4[7:0] (and1, in1, {8{not_sel1 & sel[0]}});   // Select in1 if sel = 01
+    and g5[7:0] (and2, in2, {8{sel[1] & not_sel0}});   // Select in2 if sel = 10
+    and g6[7:0] (and3, in3, {8{sel[1] & sel[0]}});     // Select in3 if sel = 11
+
+    // OR gates to combine all possible outputs
+    or g7[7:0] (out, and0, and1, and2, and3);
+endmodule
+
 
     // Component: Sum of mileage components
     wire [7:0] temp_sum_mileage;
     four_bit_adder sum_mileage_adder(.a(mileage1[3:0]), .b(mileage2[3:0]), .sum(temp_sum_mileage[3:0]));
     four_bit_adder sum_mileage_adder2(.a(temp_sum_mileage[3:0]), .b(mileage3[3:0]), .sum(sum_mileage[3:0]));
 
-    // Mileage Module: Average mileage calculation (sum_mileage / 3)
+    module avg_mileage_gate_level (
+    input [7:0] sum_mileage,
+    output [7:0] avg_mileage
+);
     wire [7:0] avg_mileage_temp;
-    assign avg_mileage_temp = sum_mileage >> 1; 
-    assign avg_mileage = avg_mileage_temp >> 1; 
+
+    // First right shift (sum_mileage >> 1)
+    and (avg_mileage_temp[0], sum_mileage[1], 1'b1); 
+    and (avg_mileage_temp[1], sum_mileage[2], 1'b1); 
+    and (avg_mileage_temp[2], sum_mileage[3], 1'b1); 
+    and (avg_mileage_temp[3], sum_mileage[4], 1'b1); 
+    and (avg_mileage_temp[4], sum_mileage[5], 1'b1); 
+    and (avg_mileage_temp[5], sum_mileage[6], 1'b1); 
+    and (avg_mileage_temp[6], sum_mileage[7], 1'b1); 
+    and (avg_mileage_temp[7], 1'b0, 1'b1);           
+
+    // Second right shift (avg_mileage_temp >> 1)
+    and (avg_mileage[0], avg_mileage_temp[1], 1'b1); 
+    and (avg_mileage[1], avg_mileage_temp[2], 1'b1); 
+    and (avg_mileage[2], avg_mileage_temp[3], 1'b1); 
+    and (avg_mileage[3], avg_mileage_temp[4], 1'b1); 
+    and (avg_mileage[4], avg_mileage_temp[5], 1'b1); 
+    and (avg_mileage[5], avg_mileage_temp[6], 1'b1); 
+    and (avg_mileage[6], avg_mileage_temp[7], 1'b1); 
+    and (avg_mileage[7], 1'b0, 1'b1);             
+endmodule
 
     // Component: Calculate total fuel consumption: distance / avg_mileage
-    wire [3:0] distance_temp;
-    assign distance_temp = distance; 
+    module distance_transfer_gate_level (
+    input [3:0] distance,
+    output [3:0] distance_temp
+);
+
+    // Connect each bit of distance directly to distance_temp using AND gates
+    and (distance_temp[0], distance[0], 1'b1); 
+    and (distance_temp[1], distance[1], 1'b1); 
+    and (distance_temp[2], distance[2], 1'b1); 
+    and (distance_temp[3], distance[3], 1'b1); 
+endmodule
+ 
 
     // Component: Logic for division
     wire [4:0] temp_fuel_used;
@@ -235,13 +310,28 @@ module divide_by_mileage_gates (
     wire [7:0] diff;
     
     // Shift dividend left to match with divisor
-    assign temp_dividend = {4'b0000, dividend};
+    module shift_left_dividend_gate_level (
+    input [3:0] dividend,
+    output [7:0] temp_dividend
+);
+
+    // Set the lower 4 bits of temp_dividend to 0
+    and (temp_dividend[0], 1'b0, 1'b0);
+    and (temp_dividend[1], 1'b0, 1'b0);
+    and (temp_dividend[2], 1'b0, 1'b0);
+    and (temp_dividend[3], 1'b0, 1'b0);
+
+    // Pass the 4-bit dividend to the upper 4 bits of temp_dividend
+    and (temp_dividend[4], dividend[0], 1'b1);
+    and (temp_dividend[5], dividend[1], 1'b1);
+    and (temp_dividend[6], dividend[2], 1'b1);
+    and (temp_dividend[7], dividend[3], 1'b1);
+
+endmodule
+
     
     // Compare and subtract if greater or equal
     comparator_gates comp (.A(temp_dividend), .B(divisor), .greater_or_equal(greater_equal));
     subtractor_8bit_gates sub (.a(temp_dividend), .b(divisor), .diff(diff), .borrow(diff_borrow));
     
-    // Logic to handle shifting and quotient setting
-    // Gate-Level output can be controlled via AND, OR, and XOR to set quotient bits accordingly.
-    // This would typically require sequential logic to track multiple bits of the quotient.
 endmodule
