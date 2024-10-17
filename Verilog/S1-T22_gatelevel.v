@@ -6,6 +6,7 @@
 //Member-2: Chetan Kumar Sah, 231CS118, chetankumarsah.231cs118@nitk.edu.in
 //Member-3: Girish Sharma, 231CS123, girishsharma.231cs123@nitk.edu.in
 
+//Gate level implementation
 // Main Module: Digital Fuel Gauge System
 module Main_Module(
     input clk,
