@@ -918,22 +918,24 @@ endmodule
 
   In this digital fuel gauge project, the system is designed to simplify the process of fuel tracking and range estimation for a vehicle:
 
-Mileage Input:
-
-The gauge directly accepts mileage as an input, representing the distance that the vehicle can travel per liter of fuel.
-Maximum Range Calculation:
-
-Using this mileage input, the gauge calculates the maximum possible range by multiplying the mileage with the current fuel level in the tank. This range value, indicating the farthest distance the vehicle can travel with the available fuel, is shown on a seven-segment display.
-Distance Input and Fuel Consumption:
-
-When the distance traveled is entered, the gauge calculates fuel consumption by dividing the distance by the mileage, determining the exact fuel consumed for that journey.
-Remaining Fuel Calculation:
-
-The system then subtracts the fuel consumed from the total fuel to calculate the remaining fuel level, updating it as the new fuel amount in the tank.
-Threshold Comparison and LED Indicator:
-
-The remaining fuel level is compared against a critical threshold of 2 liters.
-LED Indicator: Lights up if the remaining fuel is 2 liters or less, signaling that fuel is critically low.
+1.Mileage Input:</br>
+The gauge directly accepts mileage as an input, representing the distance that the vehicle can travel per liter of fuel.</br>
+</br>
+2.Maximum Range Calculation:</br>
+Using this mileage input, the gauge calculates the maximum possible range by multiplying the mileage with the current fuel level in the tank. This range value, indicating the farthest distance the vehicle can travel with the available fuel, is shown on a seven-segment display.</br>
+</br>
+3.Distance Input and Fuel Consumption:</br>
+When the distance traveled is entered, the gauge calculates fuel consumption by dividing the distance by the mileage, determining the exact fuel consumed for that journey.</br>
+</br>
+4.Remaining Fuel Calculation:</br>
+The system then subtracts the fuel consumed from the total fuel to calculate the remaining fuel level, updating it as the new fuel amount in the tank.</br>
+</br>
+5.Threshold Comparison and LED Indicator:</br>
+The remaining fuel level is compared against a critical threshold of 2 liters.</br>
+</br>
+6.LED Indicator:</br>
+Lights up if the remaining fuel is 2 liters or less, signaling that fuel is critically low.</br>
+</br>
 This streamlined design ensures an accurate display of the vehicle’s maximum range and remaining fuel while providing a clear, critical low-fuel alert through a single LED indicator.
   > ![](Snapshots/bpmfinal.png)
 </details>
