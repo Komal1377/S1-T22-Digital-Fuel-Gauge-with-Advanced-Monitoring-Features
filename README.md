@@ -4,7 +4,6 @@
 <details>
   <summary>Detail</summary>
   
-![](Video/VIDEO.mp4)
   > Semester: 3rd Sem B. Tech. CSE
 
   > Section: S1
