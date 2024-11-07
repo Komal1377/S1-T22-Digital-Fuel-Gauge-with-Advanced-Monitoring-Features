@@ -217,7 +217,8 @@ Operation:</br>
 Dynamic Calculation: Factors in parameters such as vehicle type, road conditions, and driving style (e.g., aggressive or conservative driving).
 Mileage Adjustment: Continuously updates mileage values to reflect varying conditions, ensuring accuracy in fuel tracking.
 Fuel Efficiency Update: Adjusts fuel efficiency for each cycle based on the current conditions, impacting fuel consumption calculations.</br>
-Output: Provides an updated mileage value for fuel consumption estimation.
+Output: Provides an updated mileage value for fuel consumption estimation.</br>
+  </br>
 3. Fuel Consumption Tracker</br>
 Purpose: Tracks the amount of fuel consumed during the operation in real time.</br>
 Operation:</br>
@@ -225,12 +226,14 @@ Real-Time Monitoring: Calculates the fuel consumed in each cycle by dividing the
 Interaction with Mileage Module: Fetches the effective mileage to accurately determine the fuel rate, adjusting for consumption patterns.</br>
 Updating Remaining Fuel: Subtracts consumed fuel from the total fuel, updating the fuel level for the next cycle.</br>
 Output: Feeds the updated remaining fuel level back to the Fuel Input Module for continuity.</br>
+  </br>
 4. Range Estimator</br>
 Purpose: Calculates the maximum distance the vehicle can cover with the remaining fuel.</br>
 Operation:</br>
 Dynamic Range Calculation: Uses current fuel level and mileage to estimate how far the vehicle can travel.</br>
 Adjustments: Continuously updates the estimated range as fuel level and conditions change, providing real-time insights for trip planning.</br>
 Output: Displays the maximum range on the seven-segment display, aiding drivers in planning refueling stops.</br>
+  </br>
 5. LED Indicator Control Module</br>
 Purpose: Manages alerts for fuel levels to inform the user when fuel is low or critically low.</br>
 Operation:</br>
@@ -239,12 +242,14 @@ LED Control:</br>
 Critical Alert (2L or less): Activates a single LED to indicate a critical fuel level when the remaining fuel falls to or below 2 liters.</br>
 Output: Controls the LED state based on fuel level to give the driver timely alerts for refueling.</br>
 6. Seven-Segment Display Controller</br>
+  </br>
 Purpose: Converts digital fuel data into a visual format on a seven-segment display.</br>
 Operation:</br>
 Data Conversion: Transforms the fuel level or maximum range into a displayable value on the seven-segment screen, either in liters or as a percentage.</br>
 User Experience: Provides a clear and user-friendly display of fuel status, making it easy for the driver to interpret fuel levels at a glance.</br>
 Output: Drives the seven-segment display to show real-time fuel status.</br>
 Each module plays a crucial role in ensuring an accurate, real-time tracking and display of fuel status, allowing drivers to stay informed and respond appropriately to fuel alerts. This modular approach also enhances the system’s flexibility and adaptability to various user scenarios and driving conditions.</br>
+  </br>
 </details>
 
 <!-- Fourth Section -->
