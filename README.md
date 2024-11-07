@@ -204,7 +204,10 @@ LED2 = (remaining fuel < 2)
 <details>
   <summary>Detail</summary>
   
-![](Snapshots/finallogisimcircuit.png)
+![](Snapshots/finallogisimcircuit.png)</br>
+![](Snapshots/initial_module.jpeg)</br>
+![](Snapshots/mileage_module.jpeg)</br>
+</br>
 
 1. Fuel Input Module</br>
 Purpose: This module is responsible for initializing and updating the fuel input at the beginning of each driving cycle.</br>
