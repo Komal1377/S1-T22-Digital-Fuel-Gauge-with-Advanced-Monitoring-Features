@@ -203,11 +203,47 @@ LED2 = (remaining fuel < 2)
 
 <details>
   <summary>Detail</summary>
-
-  In the hardware implementation of our fall detection feature, we had to scale down the circuit to be able to execute it on a small scale in which instead letting the recovery timer go on for 30 seconds, we had to convert it to a 4 second timer. Otherwise, it performs the same function of warning if the patient falls, that is if the patient presses the reset button before 4 seconds, he/she is deemed to be in perfect state and has not fallen. If he/she fails to do so, the alarm goes off, thus ensuring timely medical intervention for the patient. <br>
-  > ![](Snapshots/fall1.png)<br> <br>
-In the hardware implementation of our BPM monitor, we had to scale down the circuit to reduce the time for which we measure the actual heartbeat of the patient from 30 seconds to 8 seconds for easier implementation. So in reference to actual data corresponding to senior citizens, we calculated that the normal beats number in 8 seconds should be between 8 and 13, and any other beats number which doesn't fall into this criterion will be deemed as an abnormal heartbeat. <br>
-  > ![](Snapshots/bpmfinal.png)<br> <br>
+1. Fuel Input Module
+Purpose: This module is responsible for initializing and updating the fuel input at the beginning of each driving cycle.
+Operation:
+Initial Fuel Input: Accepts an initial fuel value at the start of the system or journey.
+Cycle Continuity: From the second cycle onwards, it takes the remaining fuel from the previous cycle as input, enabling seamless tracking of fuel levels across cycles.
+Flexibility: Configurable to handle various input types, such as liters or percentages, depending on user requirements.
+Output: Provides the current fuel level to be used in subsequent calculations.
+2. Mileage Calculation Module
+Purpose: Calculates the vehicle’s effective mileage based on conditions to ensure realistic fuel consumption tracking.
+Operation:
+Dynamic Calculation: Factors in parameters such as vehicle type, road conditions, and driving style (e.g., aggressive or conservative driving).
+Mileage Adjustment: Continuously updates mileage values to reflect varying conditions, ensuring accuracy in fuel tracking.
+Fuel Efficiency Update: Adjusts fuel efficiency for each cycle based on the current conditions, impacting fuel consumption calculations.
+Output: Provides an updated mileage value for fuel consumption estimation.
+3. Fuel Consumption Tracker
+Purpose: Tracks the amount of fuel consumed during the operation in real time.
+Operation:
+Real-Time Monitoring: Calculates the fuel consumed in each cycle by dividing the distance traveled by the current mileage.
+Interaction with Mileage Module: Fetches the effective mileage to accurately determine the fuel rate, adjusting for consumption patterns.
+Updating Remaining Fuel: Subtracts consumed fuel from the total fuel, updating the fuel level for the next cycle.
+Output: Feeds the updated remaining fuel level back to the Fuel Input Module for continuity.
+4. Range Estimator
+Purpose: Calculates the maximum distance the vehicle can cover with the remaining fuel.
+Operation:
+Dynamic Range Calculation: Uses current fuel level and mileage to estimate how far the vehicle can travel.
+Adjustments: Continuously updates the estimated range as fuel level and conditions change, providing real-time insights for trip planning.
+Output: Displays the maximum range on the seven-segment display, aiding drivers in planning refueling stops.
+5. LED Indicator Control Module
+Purpose: Manages alerts for fuel levels to inform the user when fuel is low or critically low.
+Operation:
+Threshold Comparison: Compares remaining fuel against predefined thresholds.
+LED Control:
+Critical Alert (2L or less): Activates a single LED to indicate a critical fuel level when the remaining fuel falls to or below 2 liters.
+Output: Controls the LED state based on fuel level to give the driver timely alerts for refueling.
+6. Seven-Segment Display Controller
+Purpose: Converts digital fuel data into a visual format on a seven-segment display.
+Operation:
+Data Conversion: Transforms the fuel level or maximum range into a displayable value on the seven-segment screen, either in liters or as a percentage.
+User Experience: Provides a clear and user-friendly display of fuel status, making it easy for the driver to interpret fuel levels at a glance.
+Output: Drives the seven-segment display to show real-time fuel status.
+Each module plays a crucial role in ensuring an accurate, real-time tracking and display of fuel status, allowing drivers to stay informed and respond appropriately to fuel alerts. This modular approach also enhances the system’s flexibility and adaptability to various user scenarios and driving conditions.
 </details>
 
 <!-- Fourth Section -->
@@ -869,15 +905,31 @@ endmodule
 ```
 </details>
 
-## Design
+## Hardware Implementation
 
 <details>
   <summary>Detail</summary>
 
-  In the hardware implementation of our fall detection feature, we had to scale down the circuit to be able to execute it on a small scale in which instead letting the recovery timer go on for 30 seconds, we had to convert it to a 4 second timer. Otherwise, it performs the same function of warning if the patient falls, that is if the patient presses the reset button before 4 seconds, he/she is deemed to be in perfect state and has not fallen. If he/she fails to do so, the alarm goes off, thus ensuring timely medical intervention for the patient. <br>
-  > ![](Snapshots/fall1.png)<br> <br>
-In the hardware implementation of our BPM monitor, we had to scale down the circuit to reduce the time for which we measure the actual heartbeat of the patient from 30 seconds to 8 seconds for easier implementation. So in reference to actual data corresponding to senior citizens, we calculated that the normal beats number in 8 seconds should be between 8 and 13, and any other beats number which doesn't fall into this criterion will be deemed as an abnormal heartbeat. <br>
-  > ![](Snapshots/bpmfinal.png)<br> <br>
+  In this digital fuel gauge project, the system is designed to simplify the process of fuel tracking and range estimation for a vehicle:
+
+Mileage Input:
+
+The gauge directly accepts mileage as an input, representing the distance that the vehicle can travel per liter of fuel.
+Maximum Range Calculation:
+
+Using this mileage input, the gauge calculates the maximum possible range by multiplying the mileage with the current fuel level in the tank. This range value, indicating the farthest distance the vehicle can travel with the available fuel, is shown on a seven-segment display.
+Distance Input and Fuel Consumption:
+
+When the distance traveled is entered, the gauge calculates fuel consumption by dividing the distance by the mileage, determining the exact fuel consumed for that journey.
+Remaining Fuel Calculation:
+
+The system then subtracts the fuel consumed from the total fuel to calculate the remaining fuel level, updating it as the new fuel amount in the tank.
+Threshold Comparison and LED Indicator:
+
+The remaining fuel level is compared against a critical threshold of 2 liters.
+LED Indicator: Lights up if the remaining fuel is 2 liters or less, signaling that fuel is critically low.
+This streamlined design ensures an accurate display of the vehicle’s maximum range and remaining fuel while providing a clear, critical low-fuel alert through a single LED indicator.
+  > ![](Snapshots/bpmfinal.png)
 </details>
 
 ## References
