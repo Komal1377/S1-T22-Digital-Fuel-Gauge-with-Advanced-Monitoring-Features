@@ -916,7 +916,7 @@ endmodule
 <details>
   <summary>Detail</summary>
 
-> ![](Snapshots/Simplified_logisim.png)
+> ![](Snapshots/Simplified_logisim.jpeg)
   In this digital fuel gauge project, the system is designed to simplify the process of fuel tracking and range estimation for a vehicle:
 
 1.Mileage Input:</br>
