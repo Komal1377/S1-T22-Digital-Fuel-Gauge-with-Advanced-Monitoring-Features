@@ -203,7 +203,6 @@ LED2 = (remaining fuel < 2)
 
 <details>
   <summary>Detail</summary>
-  ![Simplified_logisim](Snapshots/Simplified_logisim.jpeg)
 1. Fuel Input Module</br>
 Purpose: This module is responsible for initializing and updating the fuel input at the beginning of each driving cycle.</br>
 Operation:</br>
@@ -917,6 +916,7 @@ endmodule
 <details>
   <summary>Detail</summary>
 
+> ![](Snapshots/Simplified_logisim.png)
   In this digital fuel gauge project, the system is designed to simplify the process of fuel tracking and range estimation for a vehicle:
 
 1.Mileage Input:</br>
@@ -938,7 +938,7 @@ The remaining fuel level is compared against a critical threshold of 2 liters.</
 Lights up if the remaining fuel is 2 liters or less, signaling that fuel is critically low.</br>
 </br>
 This streamlined design ensures an accurate display of the vehicle’s maximum range and remaining fuel while providing a clear, critical low-fuel alert through a single LED indicator.
-  > ![](Snapshots/bpmfinal.png)
+  
 </details>
 
 ## References
