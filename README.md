@@ -241,8 +241,8 @@ Threshold Comparison: Compares remaining fuel against predefined thresholds.</br
 LED Control:</br>
 Critical Alert (2L or less): Activates a single LED to indicate a critical fuel level when the remaining fuel falls to or below 2 liters.</br>
 Output: Controls the LED state based on fuel level to give the driver timely alerts for refueling.</br>
-6. Seven-Segment Display Controller</br>
   </br>
+6. Seven-Segment Display Controller</br>
 Purpose: Converts digital fuel data into a visual format on a seven-segment display.</br>
 Operation:</br>
 Data Conversion: Transforms the fuel level or maximum range into a displayable value on the seven-segment screen, either in liters or as a percentage.</br>
