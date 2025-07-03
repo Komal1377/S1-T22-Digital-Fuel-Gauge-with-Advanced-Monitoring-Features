@@ -1,16 +1,6 @@
 # Digital Fuel Gauge with Advanced Monitoring Features
+
 <!-- First Section -->
-## Team Details
-<details>
-  <summary>Detail</summary>
-  
-  > Semester: 3rd Sem B. Tech. EEE
-
-  > Section: EEEB
-
-</details>
-
-<!-- Second Section -->
 ## Abstract
 <details>
   <summary>Detail</summary>
@@ -56,7 +46,7 @@ and functionality.</br>
 
 </details>
 
-<!-- Third Section -->
+<!-- Second Section -->
 ## Working
 <details>
   <summary>Detail</summary>
@@ -250,7 +240,7 @@ Each module plays a crucial role in ensuring an accurate, real-time tracking and
   </br>
 </details>
 
-<!-- Fourth Section -->
+<!-- Third Section -->
 ## Logisim Circuit Diagram
 <details>
   <summary>Detail</summary>
@@ -313,7 +303,7 @@ and output displays, enabling easy analysis and modifications for further enhanc
 
 </details>
 
-<!-- Fifth Section -->
+<!-- Fourth Section -->
 ## Verilog Code
 <details>
   <summary>Detail</summary>
@@ -328,13 +318,6 @@ clear, facilitating easy understanding and potential modifications.
 
 
 ```
-//Design of Digital Systems Mini Project
-//S1_T22
-//DIGITAL FUEL GAUGE WITH ADVANCED MONITORING FEATURES
-//Semester: 3rd Sem B. Tech. CSE
-//Member-1: Aaditya Yadav, 231CS102, aadityayadav.231cs102@nitk.edu.in
-//Member-2: Chetan Kumar Sah, 231CS118, chetankumarsah.231cs118@nitk.edu.in
-//Member-3: Girish Sharma, 231CS123, girishsharma.231cs123@nitk.edu.in
 
 //Gate level implementation
 // Main Module: Digital Fuel Gauge System
@@ -670,14 +653,6 @@ endmodule
 ```
 
 ```
-//Design of Digital Systems Mini Project
-//S1_T22
-//DIGITAL FUEL GAUGE WITH ADVANCED MONITORING FEATURES
-//Semester: 3rd Sem B. Tech. CSE
-//Member-1: Aaditya Yadav, 231CS102, aadityayadav.231cs102@nitk.edu.in
-//Member-2: Chetan Kumar Sah, 231CS118, chetankumarsah.231cs118@nitk.edu.in
-//Member-3: Girish Sharma, 231CS123, girishsharma.231cs123@nitk.edu.in
-
 
 //Behavioral Level Implementation
 module DigitalFuelGauge(
@@ -773,14 +748,6 @@ endmodule
 ```
 
 ```
-//Design of Digital Systems Mini Project
-//S1_T22
-//DIGITAL FUEL GAUGE WITH ADVANCED MONITORING FEATURES
-//Semester: 3rd Sem B. Tech. CSE
-//Member-1: Aaditya Yadav, 231CS102, aadityayadav.231cs102@nitk.edu.in
-//Member-2: Chetan Kumar Sah, 231CS118, chetankumarsah.231cs118@nitk.edu.in
-//Member-3: Girish Sharma, 231CS123, girishsharma.231cs123@nitk.edu.in
-
 
 //Testbench File
 module DigitalFuelGauge_tb;
