@@ -4,17 +4,9 @@
 <details>
   <summary>Detail</summary>
   
-  > Semester: 3rd Sem B. Tech. CSE
+  > Semester: 3rd Sem B. Tech. EEE
 
-  > Section: S1
-
-  > Team ID: S1-T22
-
-  > Member-1: Aaditya Yadav, 231CS102, aadityayadav.231cs102@nitk.edu.in
-
-  > Member-2: Chetan Kumar Sah, 231CS118, chetankumarsah.231cs118@nitk.edu.in
-
-  > Member-3: Girish Sharma, 231CS123, girishsharma.231cs123@nitk.edu.in
+  > Section: EEEB
 
 </details>
 
