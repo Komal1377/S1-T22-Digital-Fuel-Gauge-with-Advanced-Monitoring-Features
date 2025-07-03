@@ -1,10 +1,3 @@
-//Design of Digital Systems Mini Project
-//S1_T22
-//DIGITAL FUEL GAUGE WITH ADVANCED MONITORING FEATURES
-//Semester: 3rd Sem B. Tech. CSE
-//Member-1: Aaditya Yadav, 231CS102, aadityayadav.231cs102@nitk.edu.in
-//Member-2: Chetan Kumar Sah, 231CS118, chetankumarsah.231cs118@nitk.edu.in
-//Member-3: Girish Sharma, 231CS123, girishsharma.231cs123@nitk.edu.in
 
 //Behavioral Level Implementation
 module DigitalFuelGauge(
